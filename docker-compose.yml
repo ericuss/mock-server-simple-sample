@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  mockserver:
+    image: mockserver/mockserver
+    environment:
+      - logLevel=INFO
+    ports:
+      - 1080:1080

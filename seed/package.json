@@ -1,0 +1,18 @@
+{
+  "name": "seed",
+  "version": "0.0.1",
+  "description": "Seed data for mock server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mockserver"
+  ],
+  "author": "ericuss",
+  "license": "ISC",
+  "dependencies": {
+    "mockserver-client": "^5.15.0"
+  }
+}
