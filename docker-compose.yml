@@ -7,3 +7,11 @@ services:
       - logLevel=INFO
     ports:
       - 1080:1080
+
+  seeder:
+    image: ${DOCKER_REGISTRY-}mockserver-seed:${TAG:-latest}
+    build:
+      context: .
+      dockerfile: ./seed/Dockerfile
+    depends_on:
+      - mockserver
